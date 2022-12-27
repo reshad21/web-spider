@@ -18,7 +18,9 @@ const Navber = () => {
         <li><a href='/'>Log In</a></li>
     </>
     return (
-        <div className="navbar bg-base-100 justify-between lg:px-16">
+        <div className="navbar justify-between lg:px-16 sticky top-0 z-30 w-full backdrop-blur">
+
+            {/* responsive menu start */}
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -30,11 +32,14 @@ const Navber = () => {
                 </div>
                 <a className="btn btn-ghost normal-case text-xl" href='/'>WebSpiderBd</a>
             </div>
+
+            {/* large device menu */}
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                     {menuItems}
                 </ul>
             </div>
+
         </div>
     );
 };
