@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navber = () => {
     const menuItems = <>
@@ -15,7 +16,7 @@ const Navber = () => {
         </li>
         <li><a href='/'>Contact</a></li>
         <li><a href='/'>About Us</a></li>
-        <li><a href='/'>Log In</a></li>
+        <li><Link to="/login">Login</Link></li>
     </>
     return (
         <div className="navbar justify-between lg:px-16 sticky top-0 z-30 w-full backdrop-blur">
