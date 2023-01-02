@@ -1,7 +1,22 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { AuthContext } from '../../Pages/contexts/AuthProvider';
 
 const Navber = () => {
+    const { user, logOut } = useContext(AuthContext);
+    console.log(user);
+    const location = useLocation();
+    const navigate = useNavigate();
+    const from = location.state?.from?.pathname || '/';
+
+    const handleLogOut = () => {
+        logOut()
+            .then(() => {
+                navigate(from, { replace: true });
+            })
+            .catch((error) => { });
+    }
+
     const menuItems = <>
         <li><a href='/'>Home</a></li>
         <li tabIndex={0}>
@@ -16,7 +31,12 @@ const Navber = () => {
         </li>
         <li><a href='/'>Contact</a></li>
         <li><a href='/'>About Us</a></li>
-        <li><Link to="/login">Login</Link></li>
+        {
+            (user?.displayName) ?
+                <li><Link onClick={handleLogOut} >Logout</Link></li>
+                :
+                <li><Link to="/login">Login</Link></li>
+        }
     </>
     return (
         <div className="navbar justify-between lg:px-16 sticky top-0 z-30 w-full backdrop-blur">
