@@ -1,15 +1,15 @@
 import { GoogleAuthProvider, updateProfile } from 'firebase/auth';
 import React, { useContext, useState } from 'react';
 import { toast } from 'react-hot-toast';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { auth, AuthContext } from './../contexts/AuthProvider';
 
 const SignUp = () => {
     const { createUser, googleSignIn } = useContext(AuthContext);
     const [signUpError, setSignUPError] = useState('')
-    // const location = useLocation();
-    // const navigate = useNavigate();
-    // const from = location.state?.from?.pathname || '/';
+    const location = useLocation();
+    const navigate = useNavigate();
+    const from = location.state?.from?.pathname || '/';
 
     const handleSignUp = (e) => {
         // console.log(data);
@@ -42,22 +42,22 @@ const SignUp = () => {
                 })
                     .then(() => {
 
-                        // fetch('https://buy-sell-house-server.vercel.app/user', {
-                        //     method: 'POST',
-                        //     headers: {
-                        //         'Content-Type': 'application/json',
-                        //     },
-                        //     body: JSON.stringify(userInfo),
-                        // })
-                        //     .then((response) => response.json())
-                        //     .then((data) => {
-                        //         console.log('Success:', data);
-                        //     })
-                        //     .catch((error) => {
-                        //         console.error('Error:', error);
-                        //     });
+                        fetch('http://localhost:5000/user', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify(userInfo),
+                        })
+                            .then((response) => response.json())
+                            .then((data) => {
+                                console.log('Success:', data);
+                            })
+                            .catch((error) => {
+                                console.error('Error:', error);
+                            });
 
-                        // navigate(from, { replace: true });
+                        navigate(from, { replace: true });
 
                     })
                     .catch((error) => { });
