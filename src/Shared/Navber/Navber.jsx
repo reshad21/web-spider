@@ -4,7 +4,7 @@ import { AuthContext } from '../../Pages/contexts/AuthProvider';
 
 const Navber = () => {
     const { user, logOut } = useContext(AuthContext);
-    console.log(user);
+    console.log(user?.photoURL);
     const location = useLocation();
     const navigate = useNavigate();
     const from = location.state?.from?.pathname || '/';
@@ -33,13 +33,21 @@ const Navber = () => {
         <li><a href='/'>About Us</a></li>
         {
             (user?.displayName) ?
-                <li><Link onClick={handleLogOut} >Logout</Link></li>
+                <li tabIndex={0}>
+                    <Link onClick={handleLogOut} >
+                        <img src={user?.photoURL} alt="" className='w-10 h-10 object-cover rounded-full' />
+                    </Link>
+                    <ul className="p-2 bg-slate-700 text-white">
+                        <li><Link onClick={handleLogOut}>Logout</Link></li>
+                        <li><a href='/'>Dashbord</a></li>
+                    </ul>
+                </li>
                 :
                 <li><Link to="/login">Login</Link></li>
         }
     </>
     return (
-        <div className="navbar justify-between lg:px-16 sticky top-0 z-30 w-full backdrop-blur">
+        <div className="navbar justify-between lg:px-16 sticky top-0 z-30 w-full  bg-slate-700 text-white">
 
             {/* responsive menu start */}
             <div className="navbar-start">
