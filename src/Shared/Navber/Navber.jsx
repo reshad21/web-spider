@@ -39,7 +39,7 @@ const Navber = () => {
                     </Link>
                     <ul className="p-2 bg-slate-700 text-white">
                         <li><Link onClick={handleLogOut}>Logout</Link></li>
-                        <li><a href='/'>Dashbord</a></li>
+                        <li><a href='/dashbord'>Dashbord</a></li>
                     </ul>
                 </li>
                 :
