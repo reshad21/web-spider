@@ -4,7 +4,7 @@ import Slider from '../Slider/Slider';
 
 const Home = () => {
     return (
-        <div className='mx-auto max-w-7xl'>
+        <div className='mx-auto max-w-7xl px-3'>
             <Slider></Slider>
             <ServiceProvide></ServiceProvide>
             <h1>Services We Provide</h1>
