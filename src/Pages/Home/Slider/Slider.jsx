@@ -31,7 +31,7 @@ const Slider = () => {
 
 
     return (
-        <div className="mt-3">
+        <div className="mt-[1px]">
             <>
                 <Swiper
                     pagination={pagination}
