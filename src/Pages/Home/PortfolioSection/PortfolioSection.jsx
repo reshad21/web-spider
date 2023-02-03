@@ -4,7 +4,8 @@ import flower from '../../../assets/images/sunflower.png';
 const PortfolioSection = () => {
     return (
         <div>
-            <h1 className='py-5 font-bold text-4xl text-success'>Our Impressive Portfolio</h1>
+            <h1 className='pt-5 font-bold text-4xl text-success'>Our Impressive Portfolio</h1>
+            <div className="divider h-[2px] bg-success"></div>
             <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-5">
                 <div className="card bg-base-100 shadow-xl image-full">
                     <figure><img src={flower} alt="Shoes" /></figure>
@@ -68,7 +69,7 @@ const PortfolioSection = () => {
                 </div>
             </div>
             <div className="my-5 text-center">
-                <Link className='btn btn-xl btn-success text-slate-50 hover:bg-inherit hover:border-success font-bold hover:text-success'>Discover More</Link>
+                <Link to='/allportfolio' className='btn btn-xl btn-success text-slate-50 hover:bg-inherit hover:border-success font-bold hover:text-success'>Discover More</Link>
             </div>
         </div>
     );
