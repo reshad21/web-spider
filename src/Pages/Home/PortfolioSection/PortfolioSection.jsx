@@ -5,7 +5,7 @@ const PortfolioSection = () => {
     return (
         <div>
             <h1 className='pt-5 font-bold text-4xl text-success'>Our Impressive Portfolio</h1>
-            <div className="divider h-[2px] bg-success"></div>
+            <div className="divider h-[1px] bg-success opacity-30"></div>
             <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-5">
                 <div className="card bg-base-100 shadow-xl image-full">
                     <figure><img src={flower} alt="Shoes" /></figure>
