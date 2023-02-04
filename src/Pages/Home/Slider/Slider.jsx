@@ -42,22 +42,22 @@ const Slider = () => {
                 >
                     <SwiperSlide>
                         <div className="">
-                            <img src={first} alt="" srcset="" />
+                            <img src={first} alt="" className="opacity-100" />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="">
-                            <img src={second} alt="" srcset="" />
+                            <img src={second} alt="" />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="">
-                            <img src={three} alt="" srcset="" />
+                            <img src={three} alt="" />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="">
-                            <img src={four} alt="" srcset="" />
+                            <img src={four} alt="" />
                         </div>
                     </SwiperSlide>
                 </Swiper>
