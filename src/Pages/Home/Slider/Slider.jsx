@@ -37,7 +37,6 @@ const Slider = () => {
                     pagination={pagination}
                     autoplay={autoplay}
                     modules={[Autoplay, Pagination]}
-
                     className="mySwiper"
                 >
                     <SwiperSlide>
