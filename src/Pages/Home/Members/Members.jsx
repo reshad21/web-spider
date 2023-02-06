@@ -19,7 +19,7 @@ import { FreeMode, Navigation, Thumbs } from "swiper";
 const Members = () => {
     const [thumbsSwiper, setThumbsSwiper] = useState();
     return (
-        <>
+        <div className="duel_slider">
             <Swiper
                 style={{
                     "--swiper-navigation-color": "#fff",
@@ -41,27 +41,6 @@ const Members = () => {
                 <SwiperSlide>
                     <img src={flower} alt='' />
                 </SwiperSlide>
-                <SwiperSlide>
-                    <img src={flower} alt='' />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={flower} alt='' />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={flower} alt='' />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={flower} alt='' />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={flower} alt='' />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={flower} alt='' />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={flower} alt='' />
-                </SwiperSlide>
             </Swiper>
             <Swiper
                 onSwiper={setThumbsSwiper}
@@ -71,40 +50,25 @@ const Members = () => {
                 freeMode={true}
                 watchSlidesProgress={true}
                 modules={[FreeMode, Navigation, Thumbs]}
-                className="mySwiper"
+                className="mySwiper thumbSlider"
             >
                 <SwiperSlide>
-                    <img src={flower} alt='' />
+                    <div className="">
+                        <img src={flower} alt='' />
+                    </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={flower} alt='' />
+                    <div className="">
+                        <img src={flower} alt='' />
+                    </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={flower} alt='' />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={flower} alt='' />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={flower} alt='' />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={flower} alt='' />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={flower} alt='' />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={flower} alt='' />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={flower} alt='' />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={flower} alt='' />
+                    <div className="">
+                        <img src={flower} alt='' />
+                    </div>
                 </SwiperSlide>
             </Swiper>
-        </>
+        </div>
     );
 };
 
