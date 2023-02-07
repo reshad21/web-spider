@@ -1,5 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 import Main from '../Layout/Main';
+import Contact from '../Pages/Contact/Contact';
 import Dashbord from '../Pages/Dashbord/Dashbord';
 import Home from '../Pages/Home/Home/Home';
 import AllPortfolio from '../Pages/Home/PortfolioSection/AllPortfolio/AllPortfolio';
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
         children: [
             {
                 path: '/',
+                element: <Home></Home>
+            },
+            {
+                path: '/home',
                 element: <Home></Home>
             },
             {
@@ -30,6 +35,10 @@ const router = createBrowserRouter([
             {
                 path: '/allportfolio',
                 element: <AllPortfolio></AllPortfolio>
+            },
+            {
+                path: '/contact',
+                element: <Contact></Contact>
             }
         ]
     },

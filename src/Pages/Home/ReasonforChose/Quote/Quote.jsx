@@ -5,7 +5,7 @@ const Quote = () => {
     return (
         <div className='lg:w-[40%] md:w-[40%]'>
             <div className="divider h-[3px] bg-success"></div>
-            <h1 className='text-4xl font-bold pl-5'>Get a Free Quote</h1>
+            <h1 className='text-4xl font-bold pl-5 text-[#2f2f2fc9]'>Get a Free Quote</h1>
             <div className="card-body">
 
                 <div className="form-control relative">
