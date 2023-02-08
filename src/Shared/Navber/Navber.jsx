@@ -30,7 +30,7 @@ const Navber = () => {
             </ul>
         </li>
         <li><Link to='/contact'>Contact</Link></li>
-        <li><Link to='/'>About Us</Link></li>
+        <li><Link to='/blog'>Blogs</Link></li>
         {
             (user?.displayName) ?
                 <li tabIndex={0}>
