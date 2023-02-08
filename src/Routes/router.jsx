@@ -1,8 +1,11 @@
 import { createBrowserRouter } from 'react-router-dom';
+import DashbordLayout from '../Layout/DashbordLayout';
 import Main from '../Layout/Main';
 import Blogs from '../Pages/Blogs/Blogs';
 import Contact from '../Pages/Contact/Contact';
+import CreateBlog from '../Pages/Dashbord/CreateBlog/CreateBlog';
 import Dashbord from '../Pages/Dashbord/Dashbord';
+import MyBlog from '../Pages/Dashbord/MyBlog/MyBlog';
 import Home from '../Pages/Home/Home/Home';
 import AllPortfolio from '../Pages/Home/PortfolioSection/AllPortfolio/AllPortfolio';
 import Login from '../Pages/Login/Login';
@@ -29,10 +32,7 @@ const router = createBrowserRouter([
                 path: '/signup',
                 element: <SignUp></SignUp>
             },
-            {
-                path: '/dashbord',
-                element: <Dashbord></Dashbord>
-            },
+
             {
                 path: '/allportfolio',
                 element: <AllPortfolio></AllPortfolio>
@@ -45,7 +45,27 @@ const router = createBrowserRouter([
                 path: '/blog',
                 element: <Blogs></Blogs>
             }
+        ],
+
+    },
+    {
+        path: '/dashbord',
+        element: <DashbordLayout></DashbordLayout>,
+        children: [
+            {
+                path: '/dashbord',
+                element: <Dashbord></Dashbord>
+            },
+            {
+                path: '/dashbord/createBlog',
+                element: <CreateBlog></CreateBlog>
+            },
+            {
+                path: '/dashbord/myBlog',
+                element: <MyBlog></MyBlog>
+            }
         ]
+
     },
 ])
 
