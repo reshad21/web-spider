@@ -81,7 +81,7 @@ const Contact = () => {
                         </div>
                         <div className="">
                             <p className='text-[#444444] font-semibold text-2xl'>Give us a call</p>
-                            <span className='text-[#444444]'>(123) 456 7890</span>
+                            <span className='text-[#444444]'>+880 1728-253627</span>
                         </div>
                     </div>
                     <div className="px-4 py-3 border-2 border-success mb-3 flex items-center gap-4">
@@ -90,7 +90,7 @@ const Contact = () => {
                         </div>
                         <div className="">
                             <p className='text-[#444444] font-semibold text-2xl'>Send an email</p>
-                            <span className='text-[#444444]'>yourcompany@sample.com</span>
+                            <span className='text-[#444444]'>webspiderbd247@gmail.com</span>
                         </div>
                     </div>
                     <div className="px-4 py-3 border-2 border-success mb-3 flex items-center justify-center text-success gap-1">
