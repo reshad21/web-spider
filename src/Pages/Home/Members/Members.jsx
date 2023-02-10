@@ -52,20 +52,14 @@ const Members = () => {
                 modules={[FreeMode, Navigation, Thumbs]}
                 className="mySwiper thumbSlider"
             >
-                <SwiperSlide>
-                    <div className="">
-                        <img src={flower} alt='' />
-                    </div>
+                <SwiperSlide className="w-[50px!important] h-[50px] rounded-[50%]">
+                    <img src={flower} alt='' className="w-full rounded-[50%] object-cover" />
                 </SwiperSlide>
-                <SwiperSlide>
-                    <div className="">
-                        <img src={flower} alt='' />
-                    </div>
+                <SwiperSlide className="w-[50px!important] h-[50px] rounded-[50%]">
+                    <img src={flower} alt='' className="w-full rounded-[50%] object-cover" />
                 </SwiperSlide>
-                <SwiperSlide>
-                    <div className="">
-                        <img src={flower} alt='' />
-                    </div>
+                <SwiperSlide className="w-[50px!important] h-[50px] rounded-[50%]">
+                    <img src={flower} alt='' className="w-full rounded-[50%] object-cover" />
                 </SwiperSlide>
             </Swiper>
         </div>
