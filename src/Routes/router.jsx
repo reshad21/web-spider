@@ -8,6 +8,7 @@ import Dashbord from '../Pages/Dashbord/Dashbord';
 import MyBlog from '../Pages/Dashbord/MyBlog/MyBlog';
 import Home from '../Pages/Home/Home/Home';
 import AllPortfolio from '../Pages/Home/PortfolioSection/AllPortfolio/AllPortfolio';
+import ServiceDetails from '../Pages/Home/ServiceProvide/ServiceDetails';
 import Login from '../Pages/Login/Login';
 import SignUp from '../Pages/SignUp/SignUp';
 
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
             {
                 path: '/home',
                 element: <Home></Home>
+            },
+            {
+                path: '/serviceDetails/:id/:name',
+                element: <ServiceDetails></ServiceDetails>
             },
             {
                 path: '/login',
