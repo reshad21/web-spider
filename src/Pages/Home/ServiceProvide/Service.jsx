@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 
 const Service = ({ service }) => {
     console.log(service);
-    const { serviceName, description, img, id } = service;
+    const { serviceName, description, image, id } = service;
     return (
         <div>
             <div className="card bg-base-100 shadow-xl">
-                <figure><img src={img} alt="Shoes" className='h-[200px] w-full' /></figure>
+                <figure><img src={image} alt="Shoes" className='h-[200px] w-full' /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{serviceName}</h2>
                     <p>{description}</p>

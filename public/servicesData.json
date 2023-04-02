@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "serviceName": "Design",
+        "description": "We design professional looking yet simple website. Our designs are search engine and user friendly",
+        "image": "./images/design.png"
+    },
+    {
+        "id": 2,
+        "serviceName": "Development",
+        "description": "We design professional looking yet simple website. Our designs are search engine and user friendly",
+        "image": "./images/development.png"
+    },
+    {
+        "id": 3,
+        "serviceName": "Online Marketing",
+        "description": "We design professional looking yet simple website. Our designs are search engine and user friendly",
+        "image": "./images/onlinemarket.png"
+    },
+    {
+        "id": 4,
+        "serviceName": "Business",
+        "description": "We design professional looking yet simple website. Our designs are search engine and user friendly",
+        "image": "./images/business.jpg"
+    },
+    {
+        "id": 5,
+        "serviceName": "Business",
+        "description":"We design professional looking yet simple website. Our designs are search engine and user friendly",
+        "image": "./images/technology.jpg"
+    }
+]
+
+

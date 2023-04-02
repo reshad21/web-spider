@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import flower from '../../../assets/images/sunflower.png';
+import flower from '../../../assets/img/sunflower.png';
 const PortfolioSection = () => {
     return (
         <div>

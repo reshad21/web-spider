@@ -1,5 +1,5 @@
 import React from 'react';
-import blog from '../../assets/images/sunflower.png';
+import blog from '../../assets/img/sunflower.png';
 const Blogs = () => {
     return (
         <div className='mx-auto max-w-7xl px-3 py-5'>

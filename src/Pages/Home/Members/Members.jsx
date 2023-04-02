@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import flower from '../../../assets/images/sunflower.png';
+import flower from '../../../assets/img/sunflower.png';
 
 // Import Swiper styles
 import "swiper/css";

@@ -1,7 +1,7 @@
 import React from 'react';
-import picture from '../../../assets/images/sunflower.png';
-import './reviewSlider.css';
+import picture from '../../../assets/img/sunflower.png';
 import SingleReview from './SingleReview';
+import './reviewSlider.css';
 
 const ReviewSection = () => {
     const reviews = [

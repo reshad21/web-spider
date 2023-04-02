@@ -8,10 +8,10 @@ import './slider.css';
 // import required modules
 import { Autoplay, Pagination } from "swiper";
 
-import first from '../../../assets/images/1.jpg';
-import second from '../../../assets/images/2.jpg';
-import three from '../../../assets/images/3.jpg';
-import four from '../../../assets/images/4.jpg';
+import first from '../../../assets/img/1.jpg';
+import second from '../../../assets/img/2.jpg';
+import three from '../../../assets/img/3.jpg';
+import four from '../../../assets/img/4.jpg';
 
 
 const Slider = () => {
