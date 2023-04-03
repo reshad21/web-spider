@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 
-export const SERVICE_CONTEXT = createContext();
+const SERVICE_CONTEXT = createContext();
 
 const ServiceContext = ({ children }) => {
 
@@ -12,11 +12,10 @@ const ServiceContext = ({ children }) => {
         .catch((error)=>console.log(error))
     },[])
 
-    
+
 
     const value ={
         services,
-        setService,
     }
 
     console.log(value.services);
