@@ -1,15 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { useService } from '../../../Context/ServiceContext';
 import Service from './Service';
 
 const ServiceProvide = () => {
-
-    const [services, setService] = useState([]);
-
-    useEffect(() => {
-        fetch('servicesData.json')
-            .then(res => res.json())
-            .then(data => setService(data))
-    }, [])
+    const { services } = useService();
+    console.log(services);
 
     return (
         <div>

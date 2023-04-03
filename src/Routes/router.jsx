@@ -12,7 +12,7 @@ import ServiceDetails from '../Pages/Home/ServiceProvide/ServiceDetails';
 import Login from '../Pages/Login/Login';
 import SignUp from '../Pages/SignUp/SignUp';
 
-const router = createBrowserRouter([
+const routes = createBrowserRouter([
     {
         path: "/",
         element: <Main></Main>,
@@ -76,4 +76,4 @@ const router = createBrowserRouter([
     },
 ])
 
-export default router;
+export default routes;
