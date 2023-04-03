@@ -10,7 +10,12 @@ const Service = ({ service }) => {
                 <figure><img src={image} alt="Shoes" className='h-[200px] w-full' /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{serviceName}</h2>
-                    <p>{description}</p>
+                    <p>
+                        {
+
+                            (description.length > 250) ? <p>{description.slice(0, 120)} ...</p> : description
+                        }
+                    </p>
                     <div className="card-actions">
                         <Link className="btn btn-success btn-outline" to={`/serviceDetails/${id}/${serviceName}`}>Show More</Link>
                     </div>
