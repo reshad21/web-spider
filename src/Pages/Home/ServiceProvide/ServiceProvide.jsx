@@ -11,8 +11,6 @@ const ServiceProvide = () => {
             .then(data => setService(data))
     }, [])
 
-    console.log(services);
-
     return (
         <div>
             <h1 className='pt-5 text-4xl text-success font-bold'>Services We Provide</h1>

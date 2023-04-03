@@ -1,24 +1,28 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import services from '../../../assets/servicesData.json';
+// import services from '../../../assets/servicesData.json';
 
 const ServiceDetails = () => {
     const { id } = useParams();
-    // const product = useLoaderData();
-    console.log(id, services);
+    // const servicesingle = useLoaderData();
+    console.log(id);
 
-    // const [serviceDetails, setServiceDetails] = useState([])
+    const [serviceDetails, setServiceDetails] = useState([])
+
+
+    useEffect(() => {
+        fetch('servicesData.json')
+            .then(res => res.json())
+            .then(data => setServiceDetails(data))
+    }, [])
 
     // useEffect(() => {
-    //     async function fetchUser() {
-    //         const response = await fetch(`../assets/servicesData.json/${id}`);
-    //         const data = await response.json();
-    //         setServiceDetails(data);
-    //     }
-    //     fetchUser();
+    //     fetch(`servicesData.json/${id}`)
+    //         .then(res => res.json())
+    //         .then(data => setServiceDetails(data))
     // }, [id]);
 
-    // console.log(serviceDetails);
+    console.log(serviceDetails);
 
 
     return (
